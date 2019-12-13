@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\iChef.ClassLibrary\iChef.Models.csproj" />
+    <ProjectReference Include="..\iChef.DataAccessLayer\iChef.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -11,3 +11,4 @@ C:\Other Files\Programming\1.Projects\iChef\iChef\iChef\obj\Debug\netstandard2.0
 C:\Other Files\Programming\1.Projects\iChef\iChef\iChef\obj\Debug\netstandard2.0\iChef.dll
 C:\Other Files\Programming\1.Projects\iChef\iChef\iChef\obj\Debug\netstandard2.0\ref\iChef.dll
 C:\Other Files\Programming\1.Projects\iChef\iChef\iChef\obj\Debug\netstandard2.0\iChef.pdb
+C:\Other Files\Programming\1.Projects\iChef\iChef\iChef\obj\Debug\netstandard2.0\DishPage.xaml.g.cs

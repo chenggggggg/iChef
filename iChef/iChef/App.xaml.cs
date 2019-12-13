@@ -10,7 +10,7 @@ namespace iChef
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new DishPage();
         }
 
         protected override void OnStart()

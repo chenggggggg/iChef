@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="iChef.DishPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dish name"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Difficulty" 
+                   HorizontalOptions="StartAndExpand"/>
+            <Label Text="Estimated cooking time:" 
+                   HorizontalOptions="StartAndExpand"/>
+            <Label Text="0 hour(s) and 0 minute(s)"
+                   HorizontalOptions="StartAndExpand"/>
+            <Label Text="Ingredients" 
+                   HorizontalOptions="StartAndExpand"/>
+            <Label Text="Preparations" 
+                   HorizontalOptions="StartAndExpand"/>
+        
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
