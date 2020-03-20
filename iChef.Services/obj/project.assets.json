@@ -25,26 +25,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "iChef.DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/iChef.DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/iChef.DAL.dll": {}
-        }
-      },
-      "iChef.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/iChef.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/iChef.Models.dll": {}
-        }
       }
     }
   },
@@ -192,23 +172,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "iChef.DAL/1.0.0": {
-      "type": "project",
-      "path": "../iChef.DataAccessLayer/iChef.DAL.csproj",
-      "msbuildProject": "../iChef.DataAccessLayer/iChef.DAL.csproj"
-    },
-    "iChef.Models/1.0.0": {
-      "type": "project",
-      "path": "../iChef.ClassLibrary/iChef.Models.csproj",
-      "msbuildProject": "../iChef.ClassLibrary/iChef.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3",
-      "iChef.DAL >= 1.0.0",
-      "iChef.Models >= 1.0.0"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -241,14 +209,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Other Files\\Programming\\1.Projects\\iChef\\iChef.ClassLibrary\\iChef.Models.csproj": {
-              "projectPath": "C:\\Other Files\\Programming\\1.Projects\\iChef\\iChef.ClassLibrary\\iChef.Models.csproj"
-            },
-            "C:\\Other Files\\Programming\\1.Projects\\iChef\\iChef.DataAccessLayer\\iChef.DAL.csproj": {
-              "projectPath": "C:\\Other Files\\Programming\\1.Projects\\iChef\\iChef.DataAccessLayer\\iChef.DAL.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
