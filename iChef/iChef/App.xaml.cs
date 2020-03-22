@@ -24,7 +24,7 @@ namespace iChef
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            MainPage = new LoginView();
         }
 
         protected override void OnStart()

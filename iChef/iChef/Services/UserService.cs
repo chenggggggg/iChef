@@ -6,7 +6,13 @@ namespace iChef.Services
 {
     public class UserService
     {
-        public bool ValidUserCredentials(string username, string password)
+        /// <summary>
+        /// Verifies if entered credentials are valid or filled in.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public bool VerifyUserCredentials(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {

@@ -13,11 +13,11 @@ using Xamarin.Forms.Xaml;
 namespace iChef.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage 
+    public partial class LoginView : ContentPage 
     {
         public LoginViewModel loginViewModel;
 
-        public LoginPage()
+        public LoginView()
         {
             InitializeComponent();
 
@@ -44,7 +44,7 @@ namespace iChef.Views
         public async void LogIn(object sender, EventArgs e)
         {
             UserService userService = new UserService();
-            if (userService.ValidUserCredentials(usernameEntry.Text, passwordEntry.Text))
+            if (userService.VerifyUserCredentials(usernameEntry.Text, passwordEntry.Text))
             {
                 User user = new User(usernameEntry.Text, passwordEntry.Text);
                 await App.RestService.Login(user);

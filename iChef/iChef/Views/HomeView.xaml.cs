@@ -7,21 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace iChef
+namespace iChef.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DishPage : ContentPage
+    public partial class HomeView : ContentPage
     {
-        public DishPage()
+        public HomeView()
         {
             InitializeComponent();
-
-            LoadDishInformation();
-        }
-
-        public void LoadDishInformation()
-        {
-
         }
     }
 }
