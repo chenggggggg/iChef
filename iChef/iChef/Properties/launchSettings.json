@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "iChef": {
+      "commandName": "Project",
+      "sqlDebugging": true
+    }
+  }
+}

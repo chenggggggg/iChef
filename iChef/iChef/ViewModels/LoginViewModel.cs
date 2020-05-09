@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iChef.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -33,20 +34,7 @@ namespace iChef.ViewModels
             }
         }
 
-
         public ICommand SubmitCommand { get; set; }
 
-        public LoginViewModel()
-        {
-            SubmitCommand = new Command(OnSubmit);
-        }
-
-        public void OnSubmit()
-        {
-            if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
-            {
-                MessagingCenter.Send(this, "LoginAlert", Username);
-            }
-        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using SQLite;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,7 +6,6 @@ namespace iChef.Models
 {
     public class Dish
     {
-        [PrimaryKey]
         public int Id { get; set; }
         public string Name { get; set; }
         public List<Ingredient> Ingredients { get; set; }

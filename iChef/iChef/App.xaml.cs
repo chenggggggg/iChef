@@ -11,9 +11,8 @@ namespace iChef
 {
     public partial class App : Application
     {
-        static TokenDatabaseController tokenDatabase;
-        static UserDatabaseController userDatabase;
-        static RESTService restService;
+        static UserController userDatabase;
+        static RestService restService;
         private static Label labelScreen;
         private static bool hasInternet;
         private static Page currentPage;
@@ -25,6 +24,8 @@ namespace iChef
             InitializeComponent();
 
             MainPage = new LoginView();
+
+            ApiHelper.InitializeClient();
         }
 
         protected override void OnStart()
@@ -39,35 +40,25 @@ namespace iChef
         {
         }
 
-        public static UserDatabaseController UserDatabase
+        public static UserController UserDatabase
         {
             get
             {
                 if(userDatabase == null)
                 {
-                    userDatabase = new UserDatabaseController();
+                    userDatabase = new UserController();
                 }
                 return userDatabase;
             }
         }
-        public static TokenDatabaseController TokenDatabase
-        {
-            get
-            {
-                if (tokenDatabase == null)
-                {
-                    tokenDatabase = new TokenDatabaseController();
-                }
-                return tokenDatabase;
-            }
-        }
-        public static RESTService RestService
+
+        public static RestService RestService
         {
             get
             {
                 if (restService == null)
                 {
-                    restService = new RESTService();
+                    restService = new RestService();
                 }
                 return restService;
             }

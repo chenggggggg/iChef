@@ -1,11 +1,20 @@
-﻿using System;
+﻿using iChef.Data;
+using iChef.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace iChef.Services
 {
     public class UserService
     {
+
+        public UserService()
+        {
+        }
+
+
         /// <summary>
         /// Verifies if entered credentials are valid or filled in.
         /// </summary>
